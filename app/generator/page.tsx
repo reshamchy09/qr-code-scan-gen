@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import GeneratorClient from './GeneratorClient';
+import AdUnit from '../components/AdUnit';
 
 export const metadata: Metadata = {
   title: 'Free QR Code Generator',
@@ -78,5 +79,10 @@ export const metadata: Metadata = {
 };
 
 export default function GeneratorPage() {
-  return <GeneratorClient />;
+  return (
+    <>
+      <GeneratorClient />
+      <AdUnit slot="generator" />
+    </>
+  );
 }

@@ -4,6 +4,8 @@ const footerLinks = {
   product: [
     { href: '/generator', label: 'QR Generator' },
     { href: '/scanner', label: 'QR Scanner' },
+    { href: '/blog', label: 'QR Guides' },
+    { href: '/contact', label: 'Contact Us' },
   ],
   types: [
     { href: '/generator', label: 'URL QR Code' },
@@ -13,6 +15,7 @@ const footerLinks = {
   ],
   company: [
     { href: '/about', label: 'About Us' },
+    { href: '/contact', label: 'Contact Us' },
     { href: '/privacy', label: 'Privacy Policy' },
     { href: '/terms', label: 'Terms & Conditions' },
   ],
@@ -91,7 +94,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-[rgba(124,58,237,0.08)] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-8 border-t border-[rgba(124,58,237,0.08)] flex flex-col lg:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted">
             © {new Date().getFullYear()} QR Free. All rights reserved.
           </p>
@@ -101,6 +104,24 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-primary-light transition-colors">Terms & Conditions</Link>
             <span>&bull;</span>
             <span>100% Free & Private</span>
+          </div>
+          <div className="flex items-center gap-4 text-xs text-muted/80">
+            <span>
+              Built by{' '}
+              <a
+                href="https://resamchaudhary.com.np"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-light hover:text-accent transition-colors"
+                id="footer-developer-site"
+              >
+                Resham Chaudhary
+              </a>
+            </span>
+            <span>&bull;</span>
+            <a href="mailto:reshamdevstudio@gmail.com" className="hover:text-primary-light transition-colors">
+              reshamdevstudio@gmail.com
+            </a>
           </div>
         </div>
       </div>

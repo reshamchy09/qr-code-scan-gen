@@ -53,21 +53,101 @@ export default function PrivacyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-foreground gradient-text">4. Cookies & Web Analytics</h2>
+            <h2 className="text-xl font-bold text-foreground gradient-text">4. Cookies & Advertisements</h2>
             <p>
-              QR Free does not use tracking cookies, advertising cookies, or intrusive analytics scripts. We do not track your browsing activity across other websites or store personal cookies on your device.
+              QR Free itself does not set tracking cookies, advertising cookies, or intrusive analytics
+              scripts, and we never sell your personal information. However, we participate in the
+              <strong> Google AdSense</strong> advertising program to keep the service completely free.
+              When you visit pages on QR Free, Google and its advertising partners may use cookies to
+              serve and personalize ads based on your previous visits to our website and other websites.
+            </p>
+            <p>Specifically, Google AdSense may use:</p>
+            <ul className="list-disc list-inside space-y-2 pl-4">
+              <li>
+                <strong>DART cookies:</strong> Serving ads to users based on their visits to qrfree.app
+                and other sites on the internet.
+              </li>
+              <li>
+                <strong>Ad personalization cookies:</strong> Used by Google and third-party vendors to
+                show relevant ads. You can opt out of personalized advertising by visiting the
+                Google Ads Settings page.
+              </li>
+              <li>
+                <strong>Third-party vendor cookies:</strong> Google and other third-party vendors may
+                use other advertising cookies as described in the{' '}
+                <a
+                  href="https://policies.google.com/technologies/ads"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-light underline hover:text-accent"
+                >
+                  Google Advertising Policies
+                </a>
+                .
+              </li>
+            </ul>
+            <p>
+              You may consult the{' '}
+              <a
+                href="http://www.aboutcookies.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-light underline hover:text-accent"
+              >
+                About Cookies
+              </a>{' '}
+              website for guidance on how to manage and delete cookies in common browsers. Most
+              browsers also allow you to disable third-party cookies entirely through their
+              settings.
+            </p>
+            <p>
+              We also recommend reviewing Google&apos;s{' '}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-light underline hover:text-accent"
+              >
+                Google Privacy Policy
+              </a>{' '}
+              to understand how Google uses data when you use our website.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-foreground gradient-text">5. Third-Party Links</h2>
+            <h2 className="text-xl font-bold text-foreground gradient-text">5. Consent & Opt-Out</h2>
             <p>
-              When scanning QR codes or clicking outbound links, you may be directed to external third-party websites. We are not responsible for the privacy practices or content of third-party platforms. We encourage users to read the privacy statements of any external site they visit.
+              By using our website, you consent to our privacy policy and to Google AdSense
+              cookies as described above. If you do not wish to receive personalized ads, you can:
+            </p>
+            <ul className="list-disc list-inside space-y-2 pl-4">
+              <li>Opt out of personalized advertising via{' '}
+                <a
+                  href="https://www.google.com/settings/ads"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-light underline hover:text-accent"
+                >
+                  Google Ads Settings
+                </a>.
+              </li>
+              <li>Manage or disable cookies in your browser preferences.</li>
+              <li>Decline cookie consent using the banner shown on our website.</li>
+            </ul>
+          </section>
+
+          <section className="space-y-3">
+            <h2 className="text-xl font-bold text-foreground gradient-text">6. Third-Party Links</h2>
+            <p>
+              When scanning QR codes or clicking outbound links, you may be directed to external
+              third-party websites. We are not responsible for the privacy practices or content of
+              third-party platforms. We encourage users to read the privacy statements of any external
+              site they visit.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-foreground gradient-text">6. Changes to This Privacy Policy</h2>
+            <h2 className="text-xl font-bold text-foreground gradient-text">7. Changes to This Privacy Policy</h2>
             <p>
               We may update our Privacy Policy from time to time. Any updates will be posted directly on this page with an updated modification date.
             </p>
@@ -76,10 +156,18 @@ export default function PrivacyPage() {
           <section className="space-y-3 pt-4 border-t border-border">
             <h2 className="text-xl font-bold text-foreground">Contact Us</h2>
             <p>
-              If you have any questions or suggestions about our Privacy Policy, feel free to reach out through our homepage or about section.
+              If you have any questions or suggestions about our Privacy Policy or how we use
+              cookies, please contact us through our{' '}
+              <Link href="/contact" className="text-primary-light underline hover:text-accent">
+                contact page
+              </Link>
+              .
             </p>
-            <div className="pt-2">
-              <Link href="/about" className="btn-secondary text-sm">
+            <div className="pt-2 flex flex-col sm:flex-row gap-3">
+              <Link href="/contact" className="btn-secondary text-sm">
+                Contact Us →
+              </Link>
+              <Link href="/about" className="btn-primary text-sm">
                 Learn More About Us →
               </Link>
             </div>

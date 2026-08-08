@@ -131,6 +131,44 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Developer */}
+        <div className="glass-card-static p-8 md:p-10 mb-16 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            Built by <span className="gradient-text">Resham Chaudhary</span>
+          </h2>
+          <p className="text-muted leading-relaxed text-base max-w-2xl mx-auto mb-6">
+            QR Free is crafted and maintained by Resham Chaudhary, a solo developer
+            passionate about building small, fast, and genuinely useful web tools.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a
+              href="mailto:reshamdevstudio@gmail.com"
+              className="btn-secondary text-sm"
+              id="about-developer-email"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-10 5L2 7"/>
+              </svg>
+              reshamdevstudio@gmail.com
+            </a>
+            <a
+              href="https://resamchaudhary.com.np"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost text-sm border border-[rgba(124,58,237,0.2)]"
+              id="about-developer-website"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              resamchaudhary.com.np
+            </a>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="glass-card-static p-8 md:p-12 text-center">
           <h2 className="text-2xl font-bold mb-4">

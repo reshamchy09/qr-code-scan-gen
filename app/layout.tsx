@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Geist_Mono } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CookieConsent from "./components/CookieConsent";
+import JsonLd from "./components/JsonLd";
+import { ADSENSE_CLIENT } from "./lib/adsense";
 import "./globals.css";
+
+export const metadataBase = new URL("https://qrfree.app");
 
 const inter = Inter({
   variable: "--font-inter",
@@ -92,15 +98,25 @@ export const metadata: Metadata = {
     'Online QR Code Tool',
     'Free QR Tools',
   ],
-  authors: [{ name: "QR Free" }],
-  creator: "QR Free",
+  authors: [{ name: "Resham Chaudhary", url: "https://resamchaudhary.com.np" }],
+  creator: "Resham Chaudhary",
+  publisher: "QR Free",
+  applicationName: "QR Free",
+  category: "technology",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://qrfree.app",
     siteName: "QR Free",
     title: "Free QR Code Generator & Scanner Online | QR Free",
     description:
       "Generate and scan QR codes instantly for free. Create QR codes for URLs, WiFi, text, email, phone numbers, and WhatsApp with no signup required.",
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
   twitter: {
     card: "summary_large_image",
@@ -138,9 +154,33 @@ export default function RootLayout({
       className={`${inter.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "QR Free",
+            url: "https://qrfree.app",
+            description:
+              "Free QR code generator and scanner. Create QR codes for URLs, WiFi, email, phone, SMS, and WhatsApp instantly with no signup.",
+            inLanguage: "en-US",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://www.google.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }}
+        />
         <Header />
         <main className="flex-1 pt-16">{children}</main>
         <Footer />
+        <CookieConsent />
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          id="adsbygoogle-script"
+        />
       </body>
     </html>
   );

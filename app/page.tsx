@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AdUnit from './components/AdUnit';
+import JsonLd from './components/JsonLd';
 
 const features = [
   {
@@ -95,6 +97,37 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.a,
+            },
+          })),
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: 'QR Free',
+          url: 'https://qrfree.app',
+          applicationCategory: 'UtilitiesApplication',
+          operatingSystem: 'Any',
+          description:
+            'Free QR code generator and scanner that runs entirely in the browser.',
+          offers: {
+            '@type': 'Offer',
+            price: '0',
+            priceCurrency: 'USD',
+          },
+        }}
+      />
       {/* ────── HERO SECTION ────── */}
       <section className="relative py-20 md:py-32 overflow-hidden" id="hero-section">
         {/* Decorative blurs */}
@@ -176,6 +209,13 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ────── AD SLOT ────── */}
+      <section className="py-8">
+        <div className="max-w-5xl mx-auto px-4">
+          <AdUnit slot="home" />
         </div>
       </section>
 

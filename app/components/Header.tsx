@@ -8,7 +8,8 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/generator', label: 'Generator' },
   { href: '/scanner', label: 'Scanner' },
-  { href: '/about', label: 'About' },
+  { href: '/blog', label: 'Guides' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {

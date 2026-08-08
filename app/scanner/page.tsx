@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ScannerClient from './ScannerClient';
+import AdUnit from '../components/AdUnit';
 
 export const metadata: Metadata = {
   title: 'Free QR Code Scanner',
@@ -16,5 +17,10 @@ export const metadata: Metadata = {
 };
 
 export default function ScannerPage() {
-  return <ScannerClient />;
+  return (
+    <>
+      <ScannerClient />
+      <AdUnit slot="scanner" />
+    </>
+  );
 }
