@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Need help with QR codes or have feedback? Get in touch with the QR Free team.',
     type: 'website',
-    url: 'https://qrfree.app/contact',
+    url: 'https://qr-code-scan-gen.vercel.app/contact',
   },
 };
 

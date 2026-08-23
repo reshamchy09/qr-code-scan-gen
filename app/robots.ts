@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://qrfree.app/sitemap.xml',
+    sitemap: 'https://qr-code-scan-gen.vercel.app/sitemap.xml',
   };
 }

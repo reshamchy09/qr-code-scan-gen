@@ -64,7 +64,7 @@ export default function PrivacyPage() {
             <p>Specifically, Google AdSense may use:</p>
             <ul className="list-disc list-inside space-y-2 pl-4">
               <li>
-                <strong>DART cookies:</strong> Serving ads to users based on their visits to qrfree.app
+                <strong>DART cookies:</strong> Serving ads to users based on their visits to qr-code-scan-gen.vercel.app
                 and other sites on the internet.
               </li>
               <li>

@@ -8,7 +8,7 @@ import JsonLd from "./components/JsonLd";
 import { ADSENSE_CLIENT } from "./lib/adsense";
 import "./globals.css";
 
-export const metadataBase = new URL("https://qrfree.app");
+export const metadataBase = new URL("https://qr-code-scan-gen.vercel.app");
 
 const inter = Inter({
   variable: "--font-inter",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://qrfree.app",
+    url: "https://qr-code-scan-gen.vercel.app",
     siteName: "QR Free",
     title: "Free QR Code Generator & Scanner Online | QR Free",
     description:
@@ -159,7 +159,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "QR Free",
-            url: "https://qrfree.app",
+            url: "https://qr-code-scan-gen.vercel.app",
             description:
               "Free QR code generator and scanner. Create QR codes for URLs, WiFi, email, phone, SMS, and WhatsApp instantly with no signup.",
             inLanguage: "en-US",

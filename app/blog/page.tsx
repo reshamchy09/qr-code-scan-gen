@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       'Practical guides about QR codes: how to generate, scan, design, and use them in business.',
     type: 'website',
-    url: 'https://qrfree.app/blog',
+    url: 'https://qr-code-scan-gen.vercel.app/blog',
   },
 };
 
@@ -26,10 +26,10 @@ export default function BlogIndexPage() {
         data={{
           '@context': 'https://schema.org',
           '@type': 'Blog',
-          name: 'QR Free Blog',
-          url: 'https://qrfree.app/blog',
-          description:
-            'Practical guides and how-to articles about QR codes for personal and business use.',
+name: 'QR Free Blog',
+           url: 'https://qr-code-scan-gen.vercel.app/blog',
+           description:
+             'Practical guides and how-to articles about QR codes for personal and business use.',
         }}
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

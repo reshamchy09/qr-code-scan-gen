@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { posts } from './blog/content';
 
-export const baseUrl = 'https://qrfree.app';
+export const baseUrl = 'https://qr-code-scan-gen.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({

@@ -116,7 +116,7 @@ export default function HomePage() {
           '@context': 'https://schema.org',
           '@type': 'WebApplication',
           name: 'QR Free',
-          url: 'https://qrfree.app',
+          url: 'https://qr-code-scan-gen.vercel.app',
           applicationCategory: 'UtilitiesApplication',
           operatingSystem: 'Any',
           description:

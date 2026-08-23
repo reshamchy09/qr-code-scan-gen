@@ -30,7 +30,7 @@ export async function generateMetadata({
       title: post.title,
       description: post.metaDescription,
       type: 'article',
-      url: `https://qrfree.app/blog/${post.slug}`,
+      url: `https://qr-code-scan-gen.vercel.app/blog/${post.slug}`,
       publishedTime: post.date,
       modifiedTime: post.updated,
       authors: [post.author],
@@ -59,26 +59,26 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           '@type': 'Article',
           headline: post.title,
           description: post.metaDescription,
-          image: 'https://qrfree.app/favicon.ico',
+          image: 'https://qr-code-scan-gen.vercel.app/favicon.ico',
           datePublished: post.date,
           dateModified: post.updated,
           author: {
             '@type': 'Organization',
             name: 'QR Free',
-            url: 'https://qrfree.app/about',
+            url: 'https://qr-code-scan-gen.vercel.app/about',
           },
           publisher: {
             '@type': 'Organization',
             name: 'QR Free',
-            url: 'https://qrfree.app',
+            url: 'https://qr-code-scan-gen.vercel.app',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://qrfree.app/favicon.ico',
+              url: 'https://qr-code-scan-gen.vercel.app/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': `https://qrfree.app/blog/${post.slug}`,
+            '@id': `https://qr-code-scan-gen.vercel.app/blog/${post.slug}`,
           },
         }}
       />
