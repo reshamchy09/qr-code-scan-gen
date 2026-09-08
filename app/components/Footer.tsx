@@ -17,7 +17,9 @@ const footerLinks = {
     { href: '/about', label: 'About Us' },
     { href: '/contact', label: 'Contact Us' },
     { href: '/privacy', label: 'Privacy Policy' },
+    { href: '/cookies', label: 'Cookie Policy' },
     { href: '/terms', label: 'Terms & Conditions' },
+    { href: '/disclaimer', label: 'Disclaimer' },
   ],
 };
 
@@ -46,7 +48,7 @@ export default function Footer() {
               <span className="text-lg font-bold gradient-text">QR Free</span>
             </Link>
             <p className="text-sm text-muted leading-relaxed">
-              Generate and scan QR codes instantly for free. No signup, no tracking, no limits.
+              Generate and scan QR codes instantly for free. No signup, no limits, and your QR content never leaves your browser.
             </p>
           </div>
 

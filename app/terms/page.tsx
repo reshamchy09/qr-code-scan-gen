@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Terms and Conditions',
   description:
     'Terms and Conditions for using QR Free. Free online QR code generator and scanner with no registration required.',
+  alternates: {
+    canonical: '/terms',
+  },
 };
 
 export default function TermsPage() {

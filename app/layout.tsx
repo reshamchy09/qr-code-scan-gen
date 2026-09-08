@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Inter, Geist_Mono } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -151,8 +150,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${inter.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <JsonLd
           data={{
@@ -174,13 +181,6 @@ export default function RootLayout({
         <main className="flex-1 pt-16">{children}</main>
         <Footer />
         <CookieConsent />
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-          id="adsbygoogle-script"
-        />
       </body>
     </html>
   );

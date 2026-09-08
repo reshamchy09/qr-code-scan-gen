@@ -4,7 +4,10 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About QR Free',
   description:
-    'Learn about QR Free — the 100% free, privacy-first QR code generator and scanner. No signup, no tracking, all processing in your browser.',
+    'Learn about QR Free — the 100% free, privacy-first QR code generator and scanner. No signup and all processing in your browser.',
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 const steps = [
@@ -80,7 +83,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg text-muted max-w-2xl mx-auto leading-relaxed">
             QR Free is a 100% free, privacy-first QR code tool. Generate and scan QR codes
-            instantly — no signup, no tracking, no data collection. Everything runs in your browser.
+            instantly — no signup, no data collection. Everything runs in your browser.
           </p>
         </div>
 

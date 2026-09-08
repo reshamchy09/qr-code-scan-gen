@@ -5,14 +5,14 @@ import AdUnit from '../components/AdUnit';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Contact the QR Free team. Ask questions, report issues, or give feedback about our free QR code generator and scanner.',
+    'Contact QR Free. Ask questions, report issues, or give feedback about our free QR code generator and scanner.',
   alternates: {
     canonical: '/contact',
   },
   openGraph: {
     title: 'Contact QR Free',
     description:
-      'Need help with QR codes or have feedback? Get in touch with the QR Free team.',
+      'Need help with QR codes or have feedback? Get in touch with the developer behind QR Free.',
     type: 'website',
     url: 'https://qr-code-scan-gen.vercel.app/contact',
   },

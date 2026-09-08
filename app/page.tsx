@@ -441,6 +441,53 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ────── POPULAR GUIDES ────── */}
+      <section className="py-20 relative" id="popular-guides-section">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Popular QR <span className="gradient-text">Guides</span>
+            </h2>
+            <p className="text-muted text-lg max-w-2xl mx-auto">
+              Learn how to create, scan, and design QR codes with our practical how-to articles.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link href="/blog/how-to-generate-a-qr-code" className="glass-card p-6 block group">
+              <h3 className="font-semibold mb-2 group-hover:text-primary-light transition-colors">How to Generate a QR Code</h3>
+              <p className="text-sm text-muted leading-relaxed">A step-by-step guide to creating your first scannable QR code in under a minute.</p>
+            </Link>
+            <Link href="/blog/how-to-scan-a-qr-code" className="glass-card p-6 block group">
+              <h3 className="font-semibold mb-2 group-hover:text-primary-light transition-colors">How to Scan a QR Code</h3>
+              <p className="text-sm text-muted leading-relaxed">Scan with the built-in camera on iPhone and Android, no app required.</p>
+            </Link>
+            <Link href="/blog/qr-code-types-explained" className="glass-card p-6 block group">
+              <h3 className="font-semibold mb-2 group-hover:text-primary-light transition-colors">7 QR Code Types Explained</h3>
+              <p className="text-sm text-muted leading-relaxed">Understand URL, WiFi, email, phone, SMS, WhatsApp, and text codes.</p>
+            </Link>
+            <Link href="/blog/how-to-create-a-wifi-qr-code" className="glass-card p-6 block group">
+              <h3 className="font-semibold mb-2 group-hover:text-primary-light transition-colors">Create a WiFi QR Code</h3>
+              <p className="text-sm text-muted leading-relaxed">Share your network password by scan with the correct encoding settings.</p>
+            </Link>
+            <Link href="/blog/static-vs-dynamic-qr-codes" className="glass-card p-6 block group">
+              <h3 className="font-semibold mb-2 group-hover:text-primary-light transition-colors">Static vs Dynamic QR Codes</h3>
+              <p className="text-sm text-muted leading-relaxed">Understand which type of QR code is right for your project.</p>
+            </Link>
+            <Link href="/blog/qr-code-design-best-practices" className="glass-card p-6 block group">
+              <h3 className="font-semibold mb-2 group-hover:text-primary-light transition-colors">QR Code Design Best Practices</h3>
+              <p className="text-sm text-muted leading-relaxed">Quiet zones, contrast, and sizing rules for codes that reliably scan.</p>
+            </Link>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link href="/blog" className="btn-secondary text-sm">
+              View All QR Guides →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ────── CTA BANNER ────── */}
       <section className="py-20 relative" id="cta-section">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -40,7 +40,7 @@ export const posts: BlogPost[] = [
     ],
     date: '2026-01-12',
     updated: '2026-07-28',
-    author: 'QR Free Team',
+    author: 'Resham Chaudhary',
     readTime: '6 min read',
     sections: [
       {
@@ -131,7 +131,7 @@ export const posts: BlogPost[] = [
     ],
     date: '2026-02-03',
     updated: '2026-07-28',
-    author: 'QR Free Team',
+    author: 'Resham Chaudhary',
     readTime: '8 min read',
     sections: [
       {
@@ -235,7 +235,7 @@ export const posts: BlogPost[] = [
     ],
     date: '2026-04-10',
     updated: '2026-07-28',
-    author: 'QR Free Team',
+    author: 'Resham Chaudhary',
     readTime: '5 min read',
     sections: [
       {
@@ -309,7 +309,7 @@ export const posts: BlogPost[] = [
     ],
     date: '2026-05-25',
     updated: '2026-07-28',
-    author: 'QR Free Team',
+    author: 'Resham Chaudhary',
     readTime: '7 min read',
     sections: [
       {
@@ -392,7 +392,7 @@ export const posts: BlogPost[] = [
     ],
     date: '2026-06-15',
     updated: '2026-07-28',
-    author: 'QR Free Team',
+    author: 'Resham Chaudhary',
     readTime: '6 min read',
     sections: [
       {
@@ -467,7 +467,7 @@ export const posts: BlogPost[] = [
     ],
     date: '2026-07-08',
     updated: '2026-07-28',
-    author: 'QR Free Team',
+    author: 'Resham Chaudhary',
     readTime: '5 min read',
     sections: [
       {
